@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HopeBridge Foundation</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+
+<!-- Navbar -->
+<nav class="bg-blue-600 p-4 text-white flex justify-between">
+    <h1 class="font-bold text-xl">HopeBridge Foundation</h1>
+    <div>
+        <a href="#donate" class="mr-4">Donate</a>
+        <a href="#apply">Apply</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="text-center py-20 bg-white">
+    <h2 class="text-4xl font-bold mb-4">Empowering Communities</h2>
+    <p class="mb-6">Transparent donation and fund disbursement system.</p>
+    <a href="#donate" class="bg-blue-600 text-white px-6 py-3 rounded">Donate Now</a>
+</section>
+
+<!-- Donate Section -->
+<section id="donate" class="py-16 px-6">
+<h3 class="text-2xl font-bold mb-6">Make a Donation</h3>
+
+<form action="/api/donate" method="POST" class="bg-white p-6 rounded shadow-md">
+<input type="text" name="name" placeholder="Full Name" required class="w-full mb-4 p-2 border">
+<input type="email" name="email" placeholder="Email" required class="w-full mb-4 p-2 border">
+<input type="number" name="amount" placeholder="Amount" required class="w-full mb-4 p-2 border">
+<button type="submit" class="bg-green-600 text-white px-6 py-2 rounded">Donate</button>
+</form>
+</section>
+
+<!-- Apply Section -->
+<section id="apply" class="py-16 px-6 bg-gray-200">
+<h3 class="text-2xl font-bold mb-6">Apply for Support</h3>
+
+<form action="/api/apply" method="POST" class="bg-white p-6 rounded shadow-md">
+<input type="text" name="name" placeholder="Full Name" required class="w-full mb-4 p-2 border">
+<textarea name="reason" placeholder="Describe your need" required class="w-full mb-4 p-2 border"></textarea>
+<button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded">Submit Application</button>
+</form>
+</section>
+
+<!-- Footer -->
+<footer class="bg-blue-600 text-white text-center p-4">
+© 2026 HopeBridge Foundation. All Rights Reserved.
+</footer>
+
+</body>
+</html>
